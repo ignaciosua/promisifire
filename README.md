@@ -1,4 +1,4 @@
-### Promise to GO
+### Callbacks to promises
 
 A helper library to transform callbacks into promises
 
