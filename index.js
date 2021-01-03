@@ -11,10 +11,10 @@ const promisifire = async (config) => {
     if(!config.parameters.success) return reject("promisifire: Missing success parameter")
     if(!config.parameters.error) return reject("promisifire: Missing error parameter")
     if (config.parameters.success) {
-      config.success = onSuccess;
+      config.parameters.success = onSuccess;
     }
     if (config.parameters.error) {
-      config.error = onError;
+      config.parameters.error = onError;
     }
     config.method.apply(config.instance,Object.values(config.parameters));
   });

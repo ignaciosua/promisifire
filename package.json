@@ -1,25 +1,28 @@
 {
-    "name": "promisifire",
-    "version": "1.0.2",
-    "description": "A helper library to transform callbacks into promises",
-    "main": "index.js",
-    "scripts": {
-      "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "repository": {
-      "type": "git",
-      "url": "https://github.com/ignaciosua/promisifire.git"
-    },
-    "keywords": [
-      "Promises",
-      "javascript",
-      "callbacks",
-      "promisetocallbacks"
-    ],
-    "bugs":{
-      "url":"https://github.com/ignaciosua/promisifire/issues"
-    },
-    "author": "ignaciosua.h@gmail.com",
-    "license": "ISC",
-    "homepage": "https://github.com/ignaciosua/promisifire.git"
+  "name": "promisifire",
+  "version": "1.0.2",
+  "description": "A helper library to transform callbacks into promises",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ignaciosua/promisifire.git"
+  },
+  "keywords": [
+    "Promises",
+    "javascript",
+    "callbacks",
+    "promisetocallbacks"
+  ],
+  "bugs": {
+    "url": "https://github.com/ignaciosua/promisifire/issues"
+  },
+  "author": "ignaciosua.h@gmail.com",
+  "license": "ISC",
+  "homepage": "https://github.com/ignaciosua/promisifire.git",
+  "devDependencies": {
+    "jest": "^26.6.3"
   }
+}
