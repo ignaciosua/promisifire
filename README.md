@@ -23,10 +23,13 @@ import promisifire from 'promisifire'
     instance: yourInstance,
     // Mehod you want to call
     method: yourInstance.method,
-    // ordered parameters this method will receive
+    // pass parameters ordered exaclty how your function is expecting
     parameters: {
+      //This will be the position of your options variable
       options: options,
+      //This will be the position of your success callback
       success: true,
+      //This will be the position of your error callback
       error: true,
       }
     };
