@@ -24,7 +24,7 @@ describe('promisifire', () => {
     let config = {
       instance: null,
       method: false,
-      parameters: { error: false, success: undefined },
+      parameters: [ "hello" ,"error", "success"],
     };
     try {
       await promisifire(config);
@@ -38,7 +38,7 @@ describe('promisifire', () => {
     let config = {
       instance: successCallback,
       method: null,
-      parameters: { text: 'hello', error: true, success: true },
+      parameters: [ "hello" ,"error", "success"],
     };
     try {
       await promisifire(config);
@@ -50,7 +50,7 @@ describe('promisifire', () => {
     let config = {
       instance: successCallback,
       method: successCallback,
-      parameters: { text: 'hello', success: true },
+      parameters: [ "hello" , "success"],
     };
     try {
       await promisifire(config);
@@ -62,7 +62,7 @@ describe('promisifire', () => {
     let config = {
       instance: successCallback,
       method: successCallback,
-      parameters: { text: 'hello', error: true },
+      parameters: [ "hello" ,"error"],
     };
     try {
       await promisifire(config);
@@ -74,7 +74,7 @@ describe('promisifire', () => {
     let config = {
       instance: successCallback,
       method: successCallback,
-      parameters: { text: 'hello', error: true, success: true },
+      parameters:[ "hello" ,"error", "success"],
     };
     try {
       let result = await promisifire(config);
@@ -86,7 +86,7 @@ describe('promisifire', () => {
     let config = {
       instance: errorCallback,
       method: errorCallback,
-      parameters: { text: 'hello', error: true, success: true },
+      parameters: [ "hello" ,"error", "success"],
     };
     try {
       await promisifire(config);
