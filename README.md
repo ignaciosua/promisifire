@@ -1,6 +1,6 @@
 ### Callbacks to promises
 
-A helper library to transform callbacks into promises
+A helper library to transform any callback into promise
 
 ### Repository
 
